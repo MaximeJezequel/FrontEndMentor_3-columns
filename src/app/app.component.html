@@ -1,14 +1,5 @@
 <main>
   <div class="card-container">
-    <div
-      class="card"
-      *ngFor="let car of cars"
-      [ngStyle]="{ 'background-color': car.color }"
-    >
-      <div class="img-container"><img src="{{ car.image }}" alt="logo" /></div>
-      <h1>{{ car.type.toUpperCase() }}</h1>
-      <p class="detail">{{ car.text }}</p>
-      <button  [ngStyle]="{ 'color': car.color }">Learn More</button>
-    </div>
+    <app-card *ngFor="let car of cars" [car]="car"></app-card>
   </div>
 </main>

@@ -1,9 +1,6 @@
-<div class="card" [ngStyle]="{'background-color':'orange'}">
-  <img src="assets/images/icon-sedans.svg" alt="logo" />
-  <h1>SEDANS</h1>
-  <p>
-    Choose a sedan for its affordability and excellent fuel economy. Ideal for
-    cruising in the city or on your next road trip.
-  </p>
-  <button>Learn more</button>
+<div class="card" [ngStyle]="{ 'background-color': car.color }">
+  <div class="img-container"><img src="{{ car.image }}" alt="logo" /></div>
+  <h1>{{ car.type.toUpperCase() }}</h1>
+  <p class="detail">{{ car.text }}</p>
+  <button [ngStyle]="{ color: car.color }">Learn More</button>
 </div>

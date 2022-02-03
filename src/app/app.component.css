@@ -30,43 +30,6 @@ main {
   width: 840px;
 }
 
-.card {
-  width: 210px;
-  padding: 35px;
-}
-
-.card img {
-  width: 48px;
-}
-
-.card h1 {
-  font-family: "Big Shoulders Display", cursive;
-  color: var(--neutral-light-gray);
-}
-
-.card .detail {
-  height: 120px;
-  font-family: "Lexend Deca", sans-serif;
-  color: var(--neutral-white);
-  margin-bottom: 40px;
-}
-
-.card button {
-  border-radius: 20px;
-  border: 2px solid transparent;
-  font-family: "Lexend Deca", sans-serif;
-  background-color: var(--neutral-light-gray);
-  width: 140px;
-  padding: 8px;
-}
-
-.card button:hover {
-  cursor: pointer;
-  border: 2px solid var(--neutral-light-gray);
-  background-color: transparent;
-  color: var(--neutral-light-gray) !important;
-}
-
 @media screen and (max-width: 575px) {
   main {
     width: 100%;
@@ -75,12 +38,5 @@ main {
     flex-direction: column;
     background-color: pink;
     width: 280px;
-  }
-  .card {
-    width: 230px;
-  }
-
-  .card .detail {
-    margin-bottom: 0px;
   }
 }
