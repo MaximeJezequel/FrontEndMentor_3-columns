@@ -1,0 +1,86 @@
+main {
+  --main-bg-color: hsl(0, 0%, 95%);
+  --primary-sedans: hsl(31, 77%, 52%);
+  --primary-suvs: hsl(184, 100%, 22%);
+  --primary-luxury: hsl(179, 100%, 13%);
+  --neutral-white: hsla(0, 0%, 100%, 0.75);
+  --neutral-light-gray: hsl(0, 0%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.luxury {
+  background-color: var(--primary-luxury);
+}
+.sedans {
+  background-color: var(--primary-sedans);
+}
+.suvs {
+  background-color: var(--primary-suvs);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  border-radius: 8px;
+  font-size: 15px;
+  width: 840px;
+}
+
+.card {
+  width: 210px;
+  padding: 35px;
+}
+
+.card img {
+  width: 48px;
+}
+
+.card h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--neutral-light-gray);
+}
+
+.card .detail {
+  height: 120px;
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--neutral-white);
+  margin-bottom: 40px;
+}
+
+.card button {
+  border-radius: 20px;
+  border: 2px solid transparent;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: var(--neutral-light-gray);
+  width: 140px;
+  padding: 8px;
+}
+
+.card button:hover {
+  cursor: pointer;
+  border: 2px solid var(--neutral-light-gray);
+  background-color: transparent;
+  color: var(--neutral-light-gray) !important;
+}
+
+@media screen and (max-width: 575px) {
+  main {
+    width: 100%;
+  }
+  .card-container {
+    flex-direction: column;
+    background-color: pink;
+    width: 280px;
+  }
+  .card {
+    width: 230px;
+  }
+
+  .card .detail {
+    margin-bottom: 0px;
+  }
+}
